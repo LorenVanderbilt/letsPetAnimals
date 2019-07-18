@@ -4,8 +4,17 @@ _A simple mobile app that features a selection of animals that will audibly reac
 
 ## Setup
 
+To run on simulator:
 - npm i  
 - react-native run-ios  
+
+To run on device please visit [this link](https://facebook.github.io/react-native/docs/running-on-device)
+
+If you receive the red 'undefined is not an object (evaluating 'RNSound.IsAndroid')' error:  
+- cd ios  
+- pod install  
+- cd ..
+- react-native run-ios
 
 ### Dependencies
 
