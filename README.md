@@ -1,6 +1,6 @@
 # _Let's Pet Animals_
 
-_A simple mobile app that features a selection of animals that will audibly react when you pet them._
+_A simple iOS mobile app that features a selection of animals that will audibly react when you pet them._
 
 ## Setup
 
@@ -28,4 +28,4 @@ _"react-navigation": "^3.9.1"_
 
 ## Usage
 
-- Select an animal and then swipe down on the animal to hear them react. 
+- Select an animal and then pet (swipe down on) the animal to hear them react. 

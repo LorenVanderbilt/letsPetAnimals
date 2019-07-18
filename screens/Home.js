@@ -11,7 +11,7 @@ export default class App extends React.Component {
           style={{ marginBottom: 10 }}
           width={200}
           type="secondary"
-          onPress={() => this.props.navigation.navigate('Pets')}
+          onPress={() => this.props.navigation.navigate('SelectAnimal')}
         >
           <Text style={styles.bText}>Select a Pet</Text>
         </AwesomeButtonRick>

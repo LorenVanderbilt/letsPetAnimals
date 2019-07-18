@@ -3,8 +3,8 @@ import { Image, StyleSheet } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
 import Sound from 'react-native-sound';
 
-const animalSound = require('../assets/dog_sound2.mp3');
-const animalPic = require('../assets/corgi2.jpg');
+const animalSound = require('../assets/corgi.mp3');
+const animalPic = require('../assets/corgi.jpg');
 
 export default class Butter extends Component {
   constructor(props) {

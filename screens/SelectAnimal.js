@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import AwesomeButtonRick from 'react-native-really-awesome-button/src/themes/rick';
 
 
-export default class Pets extends React.Component {
+export default class SelectAnimal extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -12,7 +12,7 @@ export default class Pets extends React.Component {
           style={{ marginBottom: 10 }}
           width={200}
           type="secondary"
-          onPress={() => this.props.navigation.navigate('Butter')}
+          onPress={() => this.props.navigation.navigate('Corgi')}
           >
           <Text style={styles.bText}>Corgi</Text>
         </AwesomeButtonRick>

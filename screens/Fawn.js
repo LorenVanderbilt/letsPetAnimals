@@ -3,8 +3,8 @@ import { Image, StyleSheet } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
 import Sound from 'react-native-sound';
 
-const animalSound = require('../assets/deer_sound2.mp3');
-const animalPic = require('../assets/fawn2.jpg')
+const animalSound = require('../assets/fawn.mp3');
+const animalPic = require('../assets/fawn.jpg')
 
 export default class Fawn extends Component {
   constructor(props) {

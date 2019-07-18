@@ -3,8 +3,8 @@ import { Image, StyleSheet } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
 import Sound from 'react-native-sound';
 
-const animalSound = require('../assets/carpurr2.mp3');
-const animalPic = require('../assets/cat2.jpg');
+const animalSound = require('../assets/cat.mp3');
+const animalPic = require('../assets/cat.jpg');
 
 export default class Cat extends Component {
   constructor(props) {
