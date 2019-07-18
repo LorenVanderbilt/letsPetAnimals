@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, ImageBackground, Text } from 'react-native';
 import GestureRecognizer from 'react-native-swipe-gestures';
+import AwesomeButtonRick from 'react-native-really-awesome-button/src/themes/rick';
 import Sound from 'react-native-sound';
 
 const animalSound = require('../assets/corgi.mp3');
@@ -48,7 +49,16 @@ export default class Butter extends Component {
           flex: 1,
         }}
       >
-        <Image style={styles.photo} source={animalPic} />
+        <ImageBackground style={styles.photo} source={animalPic}>
+          <AwesomeButtonRick
+            style={{ marginTop: 700, marginLeft: 100 }}
+            width={200}
+            type="secondary"
+            onPress={() => this.props.navigation.navigate('SelectAnimal')}
+          >
+            <Text style={styles.bText}>back</Text>
+          </AwesomeButtonRick>
+        </ImageBackground>
       </GestureRecognizer>
     );
   }
@@ -66,5 +76,9 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
     width: null,
     height: null,
+  },
+  bText: {
+    fontFamily: 'Futura-MediumItalic',
+    fontSize: 25,
   },
 });

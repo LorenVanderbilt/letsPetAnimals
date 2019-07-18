@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import AwesomeButtonRick from 'react-native-really-awesome-button/src/themes/rick';
+
 
 export default class HowTo extends React.Component {
   render() {
@@ -9,6 +11,14 @@ export default class HowTo extends React.Component {
         <Text style={styles.text}>
           Pet the animals.
         </Text>
+        <AwesomeButtonRick
+          style={{ marginBottom: 10 }}
+          width={200}
+          type="secondary"
+          onPress={() => this.props.navigation.navigate('Home')}
+        >
+          <Text style={styles.bText}>back</Text>
+        </AwesomeButtonRick>
       </View>
     );
   }
@@ -29,5 +39,9 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
     fontFamily: 'Futura-MediumItalic',
     fontSize: 50,
-  }
+  },
+  bText: {
+    fontFamily: 'Futura-MediumItalic',
+    fontSize: 25,
+  },
 });

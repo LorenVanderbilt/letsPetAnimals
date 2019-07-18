@@ -72,5 +72,5 @@ const styles = StyleSheet.create({
   bText: {
     fontFamily: 'Futura-MediumItalic',
     fontSize: 25,
-  }
+  },
 });
