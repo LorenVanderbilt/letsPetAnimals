@@ -19,7 +19,7 @@ If you receive the red 'undefined is not an object (evaluating 'RNSound.IsAndroi
 ## Demo GIF
 
 <p align="center">
-<img src="assets/readmedemo.gif" width="400"></p>
+<img src="assets/readmedemo.gif" width="300"></p>
 
 ### Dependencies
 
