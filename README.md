@@ -16,6 +16,11 @@ If you receive the red 'undefined is not an object (evaluating 'RNSound.IsAndroi
 - cd ..
 - react-native run-ios
 
+## Demo GIF
+
+<p align="center">
+<img src="assets/readmedemo.gif" width="400"></p>
+
 ### Dependencies
 
 _"react": "16.8.3",_  
