@@ -18,9 +18,11 @@ const AppNavigator = createStackNavigator(
     Robin: { screen: Robin },
   },
   {
+    mode: 'modal',
     headerMode: 'none',
-    navigationOptions: {
+    defaultNavigationOptions: {
       headerVisible: false,
+      gesturesEnabled: false,
     },
   }
 );

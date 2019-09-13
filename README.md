@@ -10,11 +10,11 @@ To run on simulator:
 
 To run on device please visit [this link](https://facebook.github.io/react-native/docs/running-on-device)  
 
-If you receive the red 'undefined is not an object (evaluating 'RNSound.IsAndroid')' error:  
+<!-- If you receive the red 'undefined is not an object (evaluating 'RNSound.IsAndroid')' error:  
 - cd ios  
 - pod install  
 - cd ..
-- react-native run-ios
+- react-native run-ios -->
 
 ## Demo GIF
 
