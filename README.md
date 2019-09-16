@@ -34,3 +34,10 @@ _"react-navigation": "^3.9.1"_
 ## Usage
 
 - Select an animal and then pet (swipe down on) the animal to hear them react. 
+
+## TODO  
+
+[] refine colors and style  
+[] experiment with different touch responder  
+[] image animations  
+[] optimize for different screen sizes  
