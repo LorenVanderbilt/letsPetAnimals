@@ -2,51 +2,44 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import AwesomeButtonRick from 'react-native-really-awesome-button/src/themes/rick';
 
-
 export default class SelectAnimal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animals: ['corgi', 'cat', 'robin', 'fawn'],
+    };
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>Pets!</Text>
-        <AwesomeButtonRick
-          style={{ marginBottom: 10 }}
-          width={200}
-          type="secondary"
-          onPress={() => this.props.navigation.navigate('Corgi')}
-          >
-          <Text style={styles.bText}>Corgi</Text>
-        </AwesomeButtonRick>
-        {/* <TouchableOpacity
-        style={styles.button}
-        onPress={() => this.props.navigation.navigate('Butter')}>
-          <Text style={styles.bText}>Corgi</Text>
-        </TouchableOpacity> */}
-        <AwesomeButtonRick
-          style={{ marginBottom: 10 }}
-          width={200}
-          type="secondary"
-          onPress={() => this.props.navigation.navigate('Cat')}
-          >
-          <Text style={styles.bText}>Cat</Text>
-        </AwesomeButtonRick>
-        <AwesomeButtonRick
-          style={{ marginBottom: 10 }}
-          width={200}
-          type="secondary"
-          onPress={() => this.props.navigation.navigate('Robin')}
-          >
-          <Text style={styles.bText}>Robin</Text>
-        </AwesomeButtonRick>
-        <AwesomeButtonRick
-          style={{ marginBottom: 10 }}
-          width={200}
-          type="secondary"
-          onPress={() => this.props.navigation.navigate('Fawn')}
-          >
-          <Text style={styles.bText}>Fawn</Text>
-        </AwesomeButtonRick>
+        {this.renderButtons()}
       </View>
     );
+  }
+
+  renderButtons() {
+    return this.state.animals.map(animal => {
+      // console.log('this is the animal', animal);
+      return (
+        <View
+          key={animal}
+          // style={styles.}
+        >
+          <AwesomeButtonRick
+            style={{ marginBottom: 10 }}
+            width={200}
+            type="secondary"
+            onPress={() =>
+              this.props.navigation.navigate('Animal', { name: animal })
+            }
+          >
+            <Text style={styles.bText}>{animal}</Text>
+          </AwesomeButtonRick>
+        </View>
+      );
+    });
   }
 }
 
